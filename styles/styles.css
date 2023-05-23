@@ -15,13 +15,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 80px;
     background-color: #878787;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre */
     padding: 7px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.6;
 }
 
@@ -40,6 +41,7 @@ ul.navbar li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -53,6 +55,7 @@ ul li {
     opacity: 0.6;
     transition: 0.3s;
 }
+
 ul li p {
     color: rgba(0,214,70,1);
 }
@@ -90,8 +93,9 @@ ul li p {
 
 .accueil {
     position: relative;
-    height: 700px;
+    height: 1200px;
     overflow: hidden;
+    text-align: center;
 }
 
 .accueil img {
@@ -99,7 +103,7 @@ ul li p {
     opacity: 0.3;
     top: 0;
     right: -15%;
-    height: 900px;
+    height: 1400px;
     transform: translate3d(0, 0, 0);
     z-index: -1;
     top: -85px; 
@@ -120,27 +124,162 @@ ul li p {
 
 .des_one {
     position: relative;
-    font-size: 80px;
-    left: 10%;
+    font-size: 120px;
     width: 100%;
     margin-bottom: 70px;
 }
 .des_two {
     position: relative;
-    font-size: 30px;
-    left: 10%;
+    font-size: 50px;
     width: 100%;
+    margin-bottom: 10%;
 }
 
 /* curiculum */
 
 .curiculum {
     position: absolute;
-
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 40%;
     height: 60%;
     background-color: #333B50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+
+}
+
+.curiculum p {
+    font-size: 25px;
+    line-height: 40px;
+    width: 90%;
+}
+
+.cv_button {
+    width: 30%;
+    height: 40px;
+    color:rgba(0,214,70,1); /* Couleur du lien */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    border: 3px solid rgba(0,214,70,1); /* Encadrement autour du lien */
+    padding: 8px 16px; /* Espacement intérieur du lien */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Transition fluide pour l'encadrement et la couleur */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+
+.cv_button:hover {
+    color: #2E8B57; /* Couleur du lien au survol */
+    border-color: #2E8B57; /* Couleur de l'encadrement au survol */
+}
+
+.logos {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0,214,70,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-  
+
+.logos a {
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgba(0,214,70,1);
+    position: relative;
+    z-index: 2;
+}
+
+.logos::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333B50;
+    border-radius: 50%;
+    right: 5px;
+    z-index: 1;
+}
+
+/* progress */
+
+.global-skills {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+}
+
+.skills p {
+    width: 200px;
+    opacity: 0.6;
+    background-color: #2ad375;
+}
+
+.progress-bar {
+    background-color: #2ad375;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+
+.competence {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.competence img {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    right: -15%;
+    height: 1400px;
+    transform: translate3d(0, 0, 0);
+    z-index: -1;
+}
+
+.des {
+    position: relative;
+    font-size: 120px;
+    width: 100%;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
