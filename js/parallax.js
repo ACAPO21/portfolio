@@ -9,7 +9,7 @@ function parallaxScroll() {
       var sectionBottom = sectionTop + sectionHeight;
   
       if (scrollPosition + window.innerHeight > sectionTop && scrollPosition < sectionBottom) {
-        var parallaxValue = (scrollPosition - sectionTop) * 0.5;
+        var parallaxValue = (scrollPosition - sectionTop) * 0.8;
         image.style.transform = 'translate3d(0, ' + parallaxValue + 'px, 0)';
       }
     });
