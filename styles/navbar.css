@@ -1,10 +1,14 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     box-sizing: border-box;
     background-color: #686b76;
     font-family: 'Poppins', sans-serif;
     color: white;
-    scroll-behavior: smooth;
 }
 
 /* #878787; #686b76; */
