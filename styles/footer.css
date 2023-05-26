@@ -1,0 +1,29 @@
+.footer_ {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.footer_ img {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+    z-index: -1;
+}
+
+footer {
+    bottom: 0px;
+    background-color: #333B50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    text-decoration: none;
+}
